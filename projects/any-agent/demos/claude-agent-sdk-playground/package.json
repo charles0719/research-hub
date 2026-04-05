@@ -1,0 +1,23 @@
+{
+  "name": "claude-agent-sdk-playground",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "basic": "node src/basic-query.js",
+    "tool": "node src/custom-tool.js",
+    "redis": "node src/redis-tool.js",
+    "agent": "node src/agent-mode.js",
+    "session:start": "node src/session-demo.js start",
+    "session:continue": "node src/session-demo.js continue",
+    "session:list": "node src/session-demo.js list",
+    "session:inspect": "node src/session-demo.js inspect"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "latest",
+    "zod": "^4.0.0"
+  }
+}
